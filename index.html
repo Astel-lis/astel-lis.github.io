@@ -1,0 +1,693 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Astel · все ссылки</title>
+<meta name="description" content="Уютные игры по вечерам. Telegram, Discord и Twitch в одном месте.">
+<meta name="theme-color" content="#0A0806">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Astel · все ссылки">
+<meta property="og:description" content="Уютные игры по вечерам. Пишешь в чат, я читаю вслух.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><text y=%2226%22 font-size=%2226%22>%F0%9F%8C%99</text></svg>">
+</head>
+<body><style>
+  :root {
+    --ink: #0A0806;
+    --smoke: #15100C;
+    --smoke-lift: #1E1710;
+    --ember: #E4B063;
+    --ember-soft: #F2D9A8;
+    --parchment: #EFE3D0;
+    --muted: #A08F79;
+    --hairline: rgba(228, 176, 99, 0.16);
+    --hairline-strong: rgba(228, 176, 99, 0.34);
+    --glow: rgba(228, 176, 99, 0.055);
+
+    --display: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif;
+    --body: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+
+    --step: 0.5rem;
+    color-scheme: dark;
+  }
+
+  @media (prefers-color-scheme: light) {
+    :root {
+      --ink: #F5EEE2;
+      --smoke: #FCF8F0;
+      --smoke-lift: #FFFDF8;
+      --ember: #8F6115;
+      --ember-soft: #6E4A0F;
+      --parchment: #221A11;
+      --muted: #6B5A44;
+      --hairline: rgba(143, 97, 21, 0.2);
+      --hairline-strong: rgba(143, 97, 21, 0.4);
+      --glow: rgba(143, 97, 21, 0.05);
+      color-scheme: light;
+    }
+  }
+
+  :root[data-theme="light"] {
+    --ink: #F5EEE2;
+    --smoke: #FCF8F0;
+    --smoke-lift: #FFFDF8;
+    --ember: #8F6115;
+    --ember-soft: #6E4A0F;
+    --parchment: #221A11;
+    --muted: #6B5A44;
+    --hairline: rgba(143, 97, 21, 0.2);
+    --hairline-strong: rgba(143, 97, 21, 0.4);
+    --glow: rgba(143, 97, 21, 0.05);
+    color-scheme: light;
+  }
+
+  :root[data-theme="dark"] {
+    --ink: #0A0806;
+    --smoke: #15100C;
+    --smoke-lift: #1E1710;
+    --ember: #E4B063;
+    --ember-soft: #F2D9A8;
+    --parchment: #EFE3D0;
+    --muted: #A08F79;
+    --hairline: rgba(228, 176, 99, 0.16);
+    --hairline-strong: rgba(228, 176, 99, 0.34);
+    --glow: rgba(228, 176, 99, 0.055);
+    color-scheme: dark;
+  }
+
+  /* Without this the column's padding is added on top of its max-width and the
+     plates run off the right edge of a phone screen. */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100dvh;
+    background: var(--ink);
+    color: var(--parchment);
+    font-family: var(--body);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  #ambient {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .page {
+    position: relative;
+    z-index: 1;
+    max-width: 27rem;
+    margin: 0 auto;
+    padding: clamp(2.5rem, 9vh, 4.5rem) 1.375rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.25rem;
+  }
+
+  /* ── crest ─────────────────────────────────────────────── */
+
+  .crest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .sigil {
+    width: 5.25rem;
+    height: 5.25rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    border: 1px solid var(--hairline-strong);
+    background:
+      radial-gradient(circle at 50% 34%, var(--glow), transparent 68%),
+      var(--smoke);
+    box-shadow: 0 0 2.5rem -0.75rem var(--glow);
+    font-family: var(--display);
+    font-size: 2.125rem;
+    color: var(--ember);
+    letter-spacing: 0.04em;
+    text-indent: 0.04em;
+  }
+
+  .name {
+    margin: 0;
+    font-family: var(--display);
+    font-size: clamp(2.375rem, 11vw, 3rem);
+    font-weight: 400;
+    letter-spacing: 0.015em;
+    line-height: 1;
+    text-wrap: balance;
+  }
+
+  .tagline {
+    margin: 0;
+    max-width: 22ch;
+    font-size: 1rem;
+    line-height: 1.55;
+    color: var(--muted);
+    text-wrap: balance;
+  }
+
+  /* ── links ─────────────────────────────────────────────── */
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .eyebrow {
+    margin: 0 0 0.25rem;
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .eyebrow::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--hairline);
+  }
+
+  .plate {
+    display: grid;
+    grid-template-columns: 2.75rem 1fr auto;
+    align-items: center;
+    gap: 1rem;
+    min-height: 4.25rem;
+    padding: 0.875rem 1.125rem;
+    border: 1px solid var(--hairline);
+    border-radius: 0.25rem;
+    background: var(--smoke);
+    color: inherit;
+    text-decoration: none;
+    transition: border-color 0.25s ease, background 0.25s ease, transform 0.25s ease;
+  }
+
+  .plate:hover,
+  .plate:focus-visible {
+    border-color: var(--hairline-strong);
+    background: var(--smoke-lift);
+    transform: translateY(-1px);
+  }
+
+  .plate:focus-visible {
+    outline: 2px solid var(--ember);
+    outline-offset: 3px;
+  }
+
+  .plate .mark {
+    width: 2.75rem;
+    height: 2.75rem;
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--hairline);
+    border-radius: 0.1875rem;
+    color: var(--ember);
+  }
+
+  .plate .mark svg {
+    width: 1.375rem;
+    height: 1.375rem;
+    fill: currentColor;
+  }
+
+  .plate .label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1875rem;
+  }
+
+  .plate .label b {
+    font-size: 1.0625rem;
+    font-weight: 600;
+    letter-spacing: 0.005em;
+  }
+
+  .plate .label span {
+    font-size: 0.8125rem;
+    line-height: 1.35;
+    color: var(--muted);
+  }
+
+  .plate .go {
+    font-size: 1.125rem;
+    color: var(--ember);
+    transition: transform 0.25s ease;
+  }
+
+  .plate:hover .go,
+  .plate:focus-visible .go {
+    transform: translateX(3px);
+  }
+
+  /* ── footer ────────────────────────────────────────────── */
+
+  .foot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.625rem;
+    text-align: center;
+  }
+
+  .foot .rule {
+    width: 2.5rem;
+    height: 1px;
+    background: var(--hairline-strong);
+  }
+
+  .foot p {
+    margin: 0;
+    font-size: 0.8125rem;
+    line-height: 1.6;
+    color: var(--muted);
+    max-width: 26ch;
+    text-wrap: balance;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+  }
+</style>
+
+<canvas id="ambient" aria-hidden="true"></canvas>
+
+<main class="page">
+  <header class="crest">
+    <div class="sigil" aria-hidden="true">A</div>
+    <h1 class="name">Astel</h1>
+    <p class="tagline">Уютные игры по вечерам. Пишешь в чат, я читаю вслух.</p>
+  </header>
+
+  <nav class="links" aria-label="Где меня найти">
+    <p class="eyebrow">Где меня найти</p>
+
+    <a class="plate" href="https://t.me/astel_lis">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M21.6 4.3 2.9 11.5c-.9.35-.9.85-.15 1.07l4.8 1.5 1.85 5.65c.22.6.4.83 1.02.83.48 0 .69-.22.96-.48l2.3-2.24 4.8 3.54c.87.48 1.5.23 1.72-.81l3.1-14.6c.32-1.27-.48-1.85-1.7-1.66Zm-3.5 3.4-8.35 7.6-.33 3.5-1.7-5.2 10.02-6.3c.44-.27.85-.12.36.4Z"/></svg>
+      </span>
+      <span class="label">
+        <b>Telegram</b>
+        <span>Напишу, когда выхожу в эфир</span>
+      </span>
+      <span class="go" aria-hidden="true">→</span>
+    </a>
+
+    <a class="plate" href="https://discord.gg/4Q4SAkRusX">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M19.54 5.34A16.1 16.1 0 0 0 15.5 4.1l-.2.37c1.3.31 2.5.85 3.6 1.6a12.6 12.6 0 0 0-10.8 0c1.1-.75 2.3-1.29 3.6-1.6L11.5 4.1a16.1 16.1 0 0 0-4.04 1.24C4.9 9.15 4.2 12.86 4.55 16.5a16.2 16.2 0 0 0 4.9 2.47l.99-1.36c-.54-.2-1.06-.45-1.55-.75l.38-.28a11.6 11.6 0 0 0 9.46 0l.38.28c-.49.3-1.01.55-1.55.75l.99 1.36a16.2 16.2 0 0 0 4.9-2.47c.4-4.2-.68-7.88-2.91-11.16ZM9.68 14.4c-.96 0-1.75-.88-1.75-1.96 0-1.08.77-1.96 1.75-1.96s1.77.88 1.75 1.96c0 1.08-.78 1.96-1.75 1.96Zm4.64 0c-.96 0-1.75-.88-1.75-1.96 0-1.08.77-1.96 1.75-1.96s1.76.88 1.75 1.96c0 1.08-.78 1.96-1.75 1.96Z"/></svg>
+      </span>
+      <span class="label">
+        <b>Discord</b>
+        <span>Играем вместе и созваниваемся</span>
+      </span>
+      <span class="go" aria-hidden="true">→</span>
+    </a>
+
+    <a class="plate" href="https://www.twitch.tv/astel_li">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M4.3 3 3 6.25v13.1h4.45V22h2.5l2.6-2.65h3.6L21.5 14V3H4.3Zm15.5 10.2-2.9 2.95h-4.45l-2.6 2.6v-2.6H6.1V4.7h13.7v8.5ZM16.3 7.5v4.9h-1.75V7.5h1.75Zm-4.65 0v4.9H9.9V7.5h1.75Z"/></svg>
+      </span>
+      <span class="label">
+        <b>Twitch</b>
+        <span>Те же стримы, только во весь экран</span>
+      </span>
+      <span class="go" aria-hidden="true">→</span>
+    </a>
+  </nav>
+
+  <footer class="foot">
+    <div class="rule"></div>
+    <p>Заходи молча или пиши в чат. Прочитаю вслух.</p>
+  </footer>
+</main>
+
+<script>
+  (function () {
+    var canvas = document.getElementById("ambient");
+    var ctx = canvas.getContext("2d");
+    var still = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    var w = 0, h = 0, dpr = 1, t = 0;
+    var haze = [], clouds = [], stars = [], moonClouds = [], moon = null, moonArt = null;
+    var ink = { glow: "rgba(228,176,99,0.055)", gold: "#E4B063", soft: "#F2D9A8" };
+
+    // Deterministic pseudo-random: the sky is scattered, not jittery between
+    // reloads, and a resize rebuilds the same arrangement.
+    function rand(seedValue) {
+      var x = Math.sin(seedValue * 127.1) * 43758.5453;
+      return x - Math.floor(x);
+    }
+
+    function readTheme() {
+      var s = getComputedStyle(document.documentElement);
+      ink.glow = (s.getPropertyValue("--glow") || "").trim() || ink.glow;
+      ink.gold = (s.getPropertyValue("--ember") || "").trim() || ink.gold;
+      ink.soft = (s.getPropertyValue("--ember-soft") || "").trim() || ink.soft;
+    }
+
+    function size() {
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      w = canvas.clientWidth;
+      h = canvas.clientHeight;
+      canvas.width = Math.max(1, Math.round(w * dpr));
+      canvas.height = Math.max(1, Math.round(h * dpr));
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+
+    function seed() {
+      var i, r1, r2;
+
+      // Warm haze, the same slow drift the page opened with.
+      haze = [];
+      for (i = 0; i < 5; i++) {
+        haze.push({
+          x: w * (0.15 + 0.7 * (i / 4)),
+          y: h * (0.1 + 0.75 * ((i * 7) % 5) / 5),
+          r: Math.min(w, h) * (0.45 + 0.28 * ((i * 3) % 4) / 4),
+          dx: (i % 2 ? 1 : -1) * 0.045 * (0.6 + (i % 3) * 0.2),
+          dy: (i % 3 ? -1 : 1) * 0.032 * (0.5 + (i % 4) * 0.2)
+        });
+      }
+
+      // Wisps that cross the page slowly enough to notice only if you wait.
+      clouds = [];
+      for (i = 0; i < 5; i++) {
+        r1 = rand(i + 11);
+        r2 = rand(i + 29);
+        clouds.push({
+          x: w * r1,
+          y: h * (0.08 + 0.84 * r2),
+          rx: w * (0.28 + 0.3 * rand(i + 41)),
+          ry: h * (0.035 + 0.03 * rand(i + 53)),
+          speed: (0.06 + 0.09 * rand(i + 67)) * (i % 2 ? 1 : -1)
+        });
+      }
+
+      // Stars keep to the margins so they never sit behind a line of text.
+      // On a phone the margins are thin, so the top and bottom bands take over.
+      stars = [];
+      var column = Math.min(w, 432);
+      var gutter = (w - column) / 2;
+      var roomy = gutter > 54;
+      for (i = 0; i < 22; i++) {
+        var rx = rand(i + 3), ry = rand(i + 71), rs = rand(i + 97);
+        var x, y;
+        if (roomy) {
+          x = (i % 2 === 0)
+            ? gutter * (0.12 + 0.74 * rx)
+            : w - gutter * (0.12 + 0.74 * rx);
+          y = h * (0.05 + 0.9 * ry);
+        } else {
+          x = w * (0.04 + 0.92 * rx);
+          y = (i % 2 === 0) ? h * (0.02 + 0.13 * ry) : h * (0.84 + 0.14 * ry);
+        }
+        stars.push({
+          x: x,
+          y: y,
+          r: 1.6 + 3.4 * rs,
+          phase: rx * 6.283,
+          rate: 0.5 + 0.9 * ry,
+          rise: 0.012 + 0.02 * rs
+        });
+      }
+
+      var mr = Math.max(34, Math.min(58, w * 0.105));
+      moon = {
+        x: roomy ? gutter * 0.55 : w * 0.815,
+        y: roomy ? h * 0.17 : h * 0.085,
+        r: mr
+      };
+
+      // Two wisps keep the moon company: one behind it, one drifting across its
+      // face, so it reads as sky rather than a sticker.
+      moonClouds = [];
+      for (i = 0; i < 3; i++) {
+        moonClouds.push({
+          x: moon.x + mr * (i === 1 ? 2.4 : -2.8) - w * 0.1 * i,
+          y: moon.y + mr * (i === 1 ? 0.18 : (i === 0 ? -0.5 : 0.75)),
+          rx: mr * (2.2 + 1.1 * rand(i + 83)),
+          ry: mr * (0.3 + 0.16 * rand(i + 91)),
+          speed: 0.055 + 0.045 * rand(i + 103),
+          front: i === 1
+        });
+      }
+
+      castMoon();
+    }
+
+    // On the dark ground the pale gold is the lit edge; on the light ground the
+    // pair swaps, so the brighter of the two always takes the limb.
+    function lum(hex) {
+      var m = /^#?([0-9a-f]{6})$/i.exec(hex || "");
+      if (!m) return 0.5;
+      var n = parseInt(m[1], 16);
+      return (((n >> 16) & 255) * 0.299 + ((n >> 8) & 255) * 0.587 + (n & 255) * 0.114) / 255;
+    }
+
+    function castMoon() {
+      if (!moon) return;
+      var a = ink.soft, b = ink.gold;
+      if (lum(a) < lum(b)) { var swap = a; a = b; b = swap; }
+      moonArt = buildMoon(moon.r, a, b);
+    }
+
+    function wisp(o, alpha) {
+      ctx.save();
+      ctx.globalAlpha = alpha;
+      ctx.translate(o.x, o.y);
+      ctx.scale(1, o.ry / o.rx);
+      var g = ctx.createRadialGradient(0, 0, 0, 0, 0, o.rx);
+      g.addColorStop(0, ink.glow);
+      g.addColorStop(0.5, ink.glow);
+      g.addColorStop(1, "rgba(0,0,0,0)");
+      ctx.fillStyle = g;
+      ctx.beginPath();
+      ctx.arc(0, 0, o.rx, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.restore();
+    }
+
+    function sparkle(x, y, r, alpha, colour) {
+      ctx.save();
+      ctx.translate(x, y);
+      ctx.globalAlpha = alpha;
+      ctx.fillStyle = colour;
+      ctx.beginPath();
+      ctx.moveTo(0, -r);
+      ctx.quadraticCurveTo(0, 0, r, 0);
+      ctx.quadraticCurveTo(0, 0, 0, r);
+      ctx.quadraticCurveTo(0, 0, -r, 0);
+      ctx.quadraticCurveTo(0, 0, 0, -r);
+      ctx.fill();
+      ctx.restore();
+    }
+
+    function buildMoon(r, bright, deep) {
+      // A lune: the full disc with a second disc lifted out of it. Carving in an
+      // offscreen buffer keeps the bite clean instead of painting a dark circle
+      // over whatever is already on the page — and lets the body be shaded
+      // before the bite is taken, which is what gives it volume.
+      var pad = r * 0.7;
+      var buf = document.createElement("canvas");
+      var s = Math.ceil((r + pad) * 2);
+      buf.width = s;
+      buf.height = s;
+      var b = buf.getContext("2d");
+      var c = s / 2;
+
+      // Light falls from the outer limb, so the body darkens toward the bite.
+      var body = b.createLinearGradient(c - r, c - r * 0.6, c + r * 0.8, c + r * 0.9);
+      body.addColorStop(0, bright);
+      body.addColorStop(0.45, deep);
+      body.addColorStop(1, deep);
+      b.fillStyle = body;
+      b.beginPath();
+      b.arc(c, c, r, 0, Math.PI * 2);
+      b.fill();
+
+      // Craters: shallow dents, kept faint so they read as texture, not spots.
+      b.globalCompositeOperation = "source-atop";
+      var pits = [
+        [-0.42, -0.28, 0.2, 0.16],
+        [-0.16, 0.34, 0.15, 0.13],
+        [-0.55, 0.2, 0.1, 0.1],
+        [-0.24, -0.58, 0.09, 0.11]
+      ];
+      for (var i = 0; i < pits.length; i++) {
+        var px = c + r * pits[i][0];
+        var py = c + r * pits[i][1];
+        var pr = r * pits[i][2];
+        var pg = b.createRadialGradient(px, py, 0, px, py, pr);
+        pg.addColorStop(0, "rgba(90,52,10," + pits[i][3] + ")");
+        pg.addColorStop(1, "rgba(90,52,10,0)");
+        b.fillStyle = pg;
+        b.beginPath();
+        b.arc(px, py, pr, 0, Math.PI * 2);
+        b.fill();
+      }
+
+      // A thin lit rim along the outer edge lifts it off the sky.
+      b.strokeStyle = bright;
+      b.globalAlpha = 0.85;
+      b.lineWidth = Math.max(1, r * 0.055);
+      b.beginPath();
+      b.arc(c, c, r - b.lineWidth * 0.5, Math.PI * 0.42, Math.PI * 1.46);
+      b.stroke();
+      b.globalAlpha = 1;
+
+      // The eraser has to be fully opaque: destination-out removes exactly as
+      // much as the source alpha, and the crater gradient still loaded into
+      // fillStyle would barely take a bite at all.
+      b.globalCompositeOperation = "destination-out";
+      b.fillStyle = "#000";
+      b.beginPath();
+      b.arc(c + r * 0.46, c - r * 0.16, r * 0.92, 0, Math.PI * 2);
+      b.fill();
+
+      return { canvas: buf, half: c };
+    }
+
+    function crescent(x, y, r, glowColour) {
+      var g = ctx.createRadialGradient(x, y, r * 0.2, x, y, r * 2.8);
+      g.addColorStop(0, glowColour);
+      g.addColorStop(1, "rgba(0,0,0,0)");
+      ctx.fillStyle = g;
+      ctx.beginPath();
+      ctx.arc(x, y, r * 2.8, 0, Math.PI * 2);
+      ctx.fill();
+
+      if (moonArt) ctx.drawImage(moonArt.canvas, x - moonArt.half, y - moonArt.half);
+    }
+
+    function draw() {
+      var i, o;
+      ctx.clearRect(0, 0, w, h);
+
+      ctx.globalCompositeOperation = "lighter";
+
+      for (i = 0; i < haze.length; i++) {
+        o = haze[i];
+        var hg = ctx.createRadialGradient(o.x, o.y, 0, o.x, o.y, o.r);
+        hg.addColorStop(0, ink.glow);
+        hg.addColorStop(1, "rgba(0,0,0,0)");
+        ctx.fillStyle = hg;
+        ctx.beginPath();
+        ctx.arc(o.x, o.y, o.r, 0, Math.PI * 2);
+        ctx.fill();
+      }
+
+      for (i = 0; i < clouds.length; i++) {
+        o = clouds[i];
+        ctx.save();
+        ctx.translate(o.x, o.y);
+        ctx.scale(1, o.ry / o.rx);
+        var cg = ctx.createRadialGradient(0, 0, 0, 0, 0, o.rx);
+        cg.addColorStop(0, ink.glow);
+        cg.addColorStop(0.55, ink.glow);
+        cg.addColorStop(1, "rgba(0,0,0,0)");
+        ctx.fillStyle = cg;
+        ctx.beginPath();
+        ctx.arc(0, 0, o.rx, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.restore();
+      }
+
+      // The wisp behind the moon, then the moon, then the one crossing its face.
+      for (i = 0; i < moonClouds.length; i++) {
+        if (!moonClouds[i].front) wisp(moonClouds[i], 1);
+      }
+
+      ctx.globalCompositeOperation = "source-over";
+
+      if (moon) {
+        var bob = Math.sin(t * 0.00021) * moon.r * 0.22;
+        crescent(moon.x, moon.y + bob, moon.r, ink.glow);
+      }
+
+      ctx.globalCompositeOperation = "lighter";
+      for (i = 0; i < moonClouds.length; i++) {
+        if (moonClouds[i].front) wisp(moonClouds[i], 1.6);
+      }
+      ctx.globalCompositeOperation = "source-over";
+
+      for (i = 0; i < stars.length; i++) {
+        o = stars[i];
+        var pulse = 0.5 + 0.5 * Math.sin(t * 0.0011 * o.rate + o.phase);
+        sparkle(o.x, o.y, o.r * (0.8 + 0.35 * pulse), 0.2 + 0.5 * pulse,
+          i % 3 === 0 ? ink.soft : ink.gold);
+      }
+    }
+
+    function step(now) {
+      t = now || 0;
+      var i, o;
+      for (i = 0; i < haze.length; i++) {
+        o = haze[i];
+        o.x += o.dx;
+        o.y += o.dy;
+        if (o.x < -o.r * 0.5 || o.x > w + o.r * 0.5) o.dx *= -1;
+        if (o.y < -o.r * 0.5 || o.y > h + o.r * 0.5) o.dy *= -1;
+      }
+      for (i = 0; i < clouds.length; i++) {
+        o = clouds[i];
+        o.x += o.speed;
+        if (o.x - o.rx > w) o.x = -o.rx;
+        if (o.x + o.rx < 0) o.x = w + o.rx;
+      }
+      for (i = 0; i < moonClouds.length; i++) {
+        o = moonClouds[i];
+        o.x += o.speed;
+        if (o.x - o.rx > w) o.x = -o.rx;
+      }
+      for (i = 0; i < stars.length; i++) {
+        o = stars[i];
+        o.y -= o.rise;
+        if (o.y < -6) o.y = h + 6;
+      }
+      draw();
+      requestAnimationFrame(step);
+    }
+
+    function boot() {
+      readTheme();
+      size();
+      seed();
+      if (still) { draw(); } else { requestAnimationFrame(step); }
+    }
+
+    window.addEventListener("resize", function () { size(); seed(); draw(); });
+
+    // The viewer's theme toggle stamps the root element; repaint in the new gold.
+    function repaint() { readTheme(); castMoon(); draw(); }
+
+    new MutationObserver(repaint)
+      .observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", repaint);
+
+    boot();
+  })();
+</script>
+
+</body>
+</html>
